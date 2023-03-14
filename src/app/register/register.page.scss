@@ -1,0 +1,92 @@
+ion-content{
+    --background:#E6EFE9;
+}
+
+//cuadro de formulario
+
+.log_form{
+    margin: auto;
+    display:flex;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height:90%;
+    background: #64b6ac;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px rgba(0.6, 0.6, 0.6, 0.6);
+}
+
+//fondo
+
+.fondo{
+    margin:auto;
+    left: 50%;
+    top: 50%;
+}
+
+.fondo .forma{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.forma:first-child{
+    background: linear-gradient( to right,#c2eaba,#88a480);
+    left: -80px;
+    top: -80px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+.forma:last-child{
+    background: linear-gradient(to right,#0bd8c0,#c5f4e0);
+    right: -30px;
+    bottom: -60px;
+    box-shadow: 8px 8px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+//listas para acomodar la wea (cambiar nombres)
+//(solo es para estar acomodando todo)
+
+.acomodarlaweaaa{
+    margin: auto;
+    background: #64b6ac;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.acomodarlaweaaa p{
+    margin: auto;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.acomodarlaweaaa ion-button{
+    margin-top: 10px;
+}
+
+//areas de texto
+
+.centrar_input{
+    --background: #FFFfFF;
+    --color: #30343f;
+    --placeholder-color: #ddd;
+    --placeholder-opacity: .8;
+    border-radius:10px;
+    margin:auto;
+    display:block;
+    margin-top:15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+//boton del formulario (diseño)
+
+.but_log{
+    margin: auto;
+    display: block;
+    --background:#1e2749;
+    --border-radius: 10px;
+}
+
+
