@@ -4,7 +4,7 @@
     Ximena Gomez 2023734 
     Melissa Olivares 2023215
     Yael Dominguez 2023734
-    Adrian Gomez 1919724
+    Adrian Morales 1919724
     Juan Rejon 2086021
   
  # Entregable #1:
