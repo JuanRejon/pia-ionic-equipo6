@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBD8CnJDm19AuV4tdVnZJ2nb3oPXD536gM",
-    authDomain: "pia-ionic-equipo6.firebaseapp.com",
-    projectId: "pia-ionic-equipo6",
-    storageBucket: "pia-ionic-equipo6.appspot.com",
-    messagingSenderId: "580016354017",
-    appId: "1:580016354017:web:29d2d9e3eac9da2c3e7da0",
-    measurementId: "G-L4S90L3MDN"
+    apiKey: "AIzaSyAwPniBAUvjeptUwyKVOLyE1JIBNe1NXVA",
+    authDomain: "ionic-pia.firebaseapp.com",
+    projectId: "ionic-pia",
+    storageBucket: "ionic-pia.appspot.com",
+    messagingSenderId: "542983344518",
+    appId: "1:542983344518:web:539f7ab4622a10e6de5c07",
+    measurementId: "G-BHXT2F71WR"
   }
 };
 
