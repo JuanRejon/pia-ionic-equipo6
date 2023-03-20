@@ -24,7 +24,7 @@ export class HomeLoggedPage implements OnInit {
       texto: '10/10 muy divertida'},
       {id:2, nombre: 'Mi Villano Favorito 2',
       texto: '20/10 doble de divertida'},
-      {id:1, nombre: 'Boku no Hero Academia',
+      {id:3, nombre: 'Boku no Hero Academia',
       texto: 'Besto shonen btw'},
     ]);
 

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HomeLoggedPageRoutingModule } from './home-logged-routing.module';
 
 import { HomeLoggedPage } from './home-logged.page';
+import { PeliculaComponent } from '../components/pelicula/pelicula.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { HomeLoggedPage } from './home-logged.page';
     IonicModule,
     HomeLoggedPageRoutingModule
   ],
-  declarations: [HomeLoggedPage]
+  declarations: [HomeLoggedPage, PeliculaComponent]
 })
 export class HomeLoggedPageModule {}

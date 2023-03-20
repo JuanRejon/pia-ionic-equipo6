@@ -9,17 +9,31 @@
 <!-- Nomas para hacerle commit lol -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Esta es la pagina principal</strong>
-  </div>
+  <ion-list>
 
-  <!-- Parte de pestañas de abajo -->
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Texto:</ion-label>
+      <ion-input type="text" [(ngModel)]="texto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
+      <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
+      <ion-text *ngIf="error" color="danger">
+          <h6>Debe ingresar nombre y matricula para {{estado}}</h6>
+      </ion-text>
+    </ion-item>
+    <ion-item *ngIf="peliculas.length>0">
+      <app-pelicula [peliculasList]="peliculas" (eliminar)="eliminar($event)" (editar)="editar($event)"></app-pelicula>
+    </ion-item>
+
+  </ion-list>
+
+
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="center" [edge]="false">
     <ion-fab-button>
@@ -37,7 +51,6 @@
 
 </ion-content>
 
-<ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="schedule">
       <ion-icon name="home"></ion-icon>
@@ -60,5 +73,5 @@
 
     </ion-tab-button>
   </ion-tab-bar>
-</ion-tabs>
+
 
