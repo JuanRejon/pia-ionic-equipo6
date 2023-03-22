@@ -26,8 +26,8 @@ const routes: Routes = [
   },
   {
     path: 'home-logged',
-    loadChildren: () => import('./home-logged/home-logged.module').then( m => m.HomeLoggedPageModule),
-    canActivate:[AutGuardGuard]
+    loadChildren: () => import('./home-logged/home-logged.module').then( m => m.HomeLoggedPageModule)
+    //canActivate:[AutGuardGuard]
   },
   {
     path: 'acc-logged',

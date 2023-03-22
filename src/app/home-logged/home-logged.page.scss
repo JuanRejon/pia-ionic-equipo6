@@ -1,3 +1,5 @@
+//parte de la pagina
+
 #container {
     text-align: center;
   
@@ -31,4 +33,31 @@
   ion-content{
     --background: #E6EFE9;
   }
+
+  // Estilizacion de las parte para agregar datos
+
+.fondo{
+  background-color: #E6EFE9;
+}
+
+.ing_datos{
+  --background: #FFFfFF;
+  --color: #30343f;
+  --border-radius: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ing_datos2{
+  --background: #FFFfFF;
+  --color: #30343f;
+  --border-radius: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
   
