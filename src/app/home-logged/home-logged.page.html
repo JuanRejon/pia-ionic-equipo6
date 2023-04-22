@@ -22,15 +22,16 @@
       <ion-input type="text" [(ngModel)]="texto"></ion-input>
     </ion-item>
 
-    <ion-item class="fondo">
-      <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
-      <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
-      <ion-text *ngIf="error" color="danger">
-          <h6>Debe ingresar nombre y matricula para {{estado}}</h6>
-      </ion-text>
-    </ion-item>
-
   </ion-list>
+
+  <!-- Centrar y estilizar estos botones -->
+
+  <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
+  <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
+  <ion-text *ngIf="error" color="danger">
+    <h6>No puede dejar campos en blanco para {{estado}}</h6>
+  </ion-text>
+
 
   <ion-list class="fondo">
 
@@ -40,45 +41,5 @@
 
   </ion-list>
 
-
-
-  <ion-fab slot="fixed" vertical="bottom" horizontal="center" [edge]="false">
-    <ion-fab-button>
-      <ion-icon name="chevron-up-circle"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="document"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="color-palette"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
 </ion-content>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Main Page</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="speakers" [routerLink]="['/saved']">
-      <ion-icon name="folder"></ion-icon>
-      <ion-label>My Stories</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="map">
-      <ion-icon name="pencil"></ion-icon>
-      <ion-label>Drafts</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="about" [routerLink]="['/acc-logged']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Account</ion-label>
-
-    </ion-tab-button>
-  </ion-tab-bar>
-
 

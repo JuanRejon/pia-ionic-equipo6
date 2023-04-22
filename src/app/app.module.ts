@@ -10,9 +10,11 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
+import { TabBarComponent } from './components/tab-bar/tab-bar.component';
+import { FabComponent } from './components/fab/fab.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TabBarComponent, FabComponent],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 

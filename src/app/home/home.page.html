@@ -14,49 +14,6 @@
     <strong>Esta es la pagina principal</strong>
   </div>
 
-  <!-- Parte de pestañas de abajo -->
-
-  <ion-fab slot="fixed" vertical="bottom" horizontal="center" [edge]="false">
-    <ion-fab-button>
-      <ion-icon name="chevron-up-circle"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="document"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="color-palette"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="globe"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
 </ion-content>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Main Page</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="speakers" [routerLink]="['/saved']">
-      <ion-icon name="folder"></ion-icon>
-      <ion-label>My Stories</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="map">
-      <ion-icon name="pencil"></ion-icon>
-      <ion-label>Drafts</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="about" [routerLink]="['/account']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Account</ion-label>
-
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
 

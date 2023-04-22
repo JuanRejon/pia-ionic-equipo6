@@ -34,6 +34,14 @@ const routes: Routes = [
     loadChildren: () => import('./acc-logged/acc-logged.module').then( m => m.AccLoggedPageModule),
     canActivate:[AutGuardGuard]
   },
+  {
+    path: 'catalog',
+    loadChildren: () => import('./catalog/catalog.module').then( m => m.CatalogPageModule)
+  },
+  {
+    path: 'catalog-logged',
+    loadChildren: () => import('./catalog-logged/catalog-logged.module').then( m => m.CatalogLoggedPageModule)
+  },
 ];
 
 @NgModule({
