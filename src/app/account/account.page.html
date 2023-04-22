@@ -37,5 +37,21 @@
 
 </ion-content>
 
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="schedule" [routerLink]="['/home']">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Main Page</ion-label>
+  </ion-tab-button>
 
+  <ion-tab-button tab="speakers" [routerLink]="['/catalog']">
+    <ion-icon name="folder"></ion-icon>
+    <ion-label>Catalog</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="about" [routerLink]="['/account']">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>Account</ion-label>
+
+  </ion-tab-button>
+</ion-tab-bar>
 <!-- Logo idea: Bisonte con una camara de pelicula -->
