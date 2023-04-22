@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Nomas para hacerle commit lol -->
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <strong>Esta es la pagina principal</strong>
+  </div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="schedule" [routerLink]="['/home']">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Main Page</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="speakers" [routerLink]="['/catalog']">
+    <ion-icon name="folder"></ion-icon>
+    <ion-label>Catalog</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="about" [routerLink]="['/account']">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>Account</ion-label>
+
+  </ion-tab-button>
+</ion-tab-bar>

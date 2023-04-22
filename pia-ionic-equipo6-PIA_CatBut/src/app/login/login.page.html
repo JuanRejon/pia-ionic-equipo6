@@ -1,0 +1,49 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content>
+
+  <div class="log_form">
+
+    <ion-list class="acomodarlaweaaa">
+
+      <p>Ingresa a tu cuenta:</p>
+
+      <ion-item-group>
+          <ion-item class="centrar_input">
+            <ion-label position="stacked">Email:</ion-label>
+            <ion-input placeholder="Enter text" [(ngModel)]="user.email"></ion-input>
+          </ion-item>
+
+          <ion-item class="centrar_input">
+            <ion-label position="stacked">Contraseña:</ion-label>
+            <ion-input placeholder="Enter text" type="password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+      </ion-item-group>
+
+      
+      <ion-button class="but_log" (click)="onLogin()">Iniciar sesion</ion-button>
+      <ion-button class="but_log" (click)="gotoRegister()">¡Unete a la comunidad!</ion-button>
+
+    </ion-list>
+
+  </div>
+
+  <div class="fondo">
+    <div class="forma"></div>
+    <div class="forma"></div>
+  </div>  
+
+</ion-content>  
+
+<!--
+<ion-item class="centrar_input" fill="outline">
+  <ion-label position="floating">Floating Label</ion-label>
+  <ion-input placeholder="Enter text"></ion-input>
+</ion-item>
+-->
