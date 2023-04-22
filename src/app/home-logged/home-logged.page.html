@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Nomas para hacerle commit lol -->
+
+<ion-content [fullscreen]="true">
+
+  <ion-list class="fondo">
+
+    <ion-item class="ing_datos">
+      <ion-label position="stacked">Nombre:</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item class="ing_datos2">
+      <ion-label position="stacked">¡Cuentanos tu opinion!</ion-label>
+      <ion-input type="text" [(ngModel)]="texto"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- Centrar y estilizar estos botones -->
+
+  <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
+  <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
+  <ion-text *ngIf="error" color="danger">
+    <h6>No puede dejar campos en blanco para {{estado}}</h6>
+  </ion-text>
+
+
+  <ion-list class="fondo">
+
+    <ion-item *ngIf="peliculas.length>0">
+      <app-pelicula [peliculasList]="peliculas" (eliminar)="eliminar($event)" (editar)="editar($event)"></app-pelicula>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="schedule" [routerLink]="['/home-logged']">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Main Page</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="speakers" [routerLink]="['/catalog-logged']">
+    <ion-icon name="folder"></ion-icon>
+    <ion-label>Catalog</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="about" [routerLink]="['/acc-logged']">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>Account</ion-label>
+
+  </ion-tab-button>
+</ion-tab-bar>
