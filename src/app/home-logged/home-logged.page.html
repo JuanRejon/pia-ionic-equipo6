@@ -26,14 +26,15 @@
 
   <!-- Centrar y estilizar estos botones -->
 
-  <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
-  <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
-  <ion-text *ngIf="error" color="danger">
-    <h6>No puede dejar campos en blanco para {{estado}}</h6>
-  </ion-text>
+  <div class="centrar">
+    <ion-button type="button" (click)="guardar()">{{estado}}</ion-button>
+    <ion-button *ngIf="estado==='actualizar'" type="button" (click)="cancelar()">Cancelar</ion-button>
+    <ion-text *ngIf="error" color="danger">
+      <h6>No puede dejar campos en blanco para {{estado}}</h6>
+    </ion-text>
+  </div>
 
-
-  <ion-list class="fondo">
+  <ion-list>
 
     <ion-item *ngIf="peliculas.length>0">
       <app-pelicula [peliculasList]="peliculas" (eliminar)="eliminar($event)" (editar)="editar($event)"></app-pelicula>
