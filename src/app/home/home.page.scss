@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #5f1717;
 
   margin: 0;
 }
@@ -30,4 +30,48 @@
 
 ion-content{
   --background: #E6EFE9;
+}
+
+// Barra de links de abajo
+
+ion-tab-bar{
+  --background: #64b6ac;
+}
+
+ion-tab-bar ion-label{
+  color: #FFFFFF;
+}
+
+// Iconos
+
+ion-icon{
+  color: #FFFFFF;
+}
+
+ion-card{
+  background-color:hsl(200, 55%, 60%);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0.6, 0.6, 0.6, 0.6);;
+}
+
+.centrar{
+  text-align: center;
+  left: 0;
+  right: 0; 
+  bottom: 5px;
+}
+
+//Copiar aqui
+
+ion-button{
+  --background:#1e2749;
+}
+
+//cambioparacheckout
+
+.CentrarT{
+  text-align: center;
+  left: 0;
+  right: 0; 
+  color: #64b6ac;
 }

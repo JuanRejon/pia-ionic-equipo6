@@ -2,8 +2,8 @@
 
 <ion-header [translucent]="true">
   <ion-toolbar class="titulo">
-    <ion-title>
-      Account
+    <ion-title class="CentrarT">
+      Inicio de Sesion
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -22,7 +22,7 @@
     <!-- Imagen -->
 
     <div>
-      <img class="imagen" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <img class="imagen" alt="Cinemaverse" src="https://yt3.googleusercontent.com/StsD0SgmOK2773xIRFomfeKiMyHMqfJEzId3CB-DHN9d2g6d3Pu1fgGzRgqbZ6nzF5OB_tx55w=s176-c-k-c0x00ffffff-no-rj" />
     </div>
 
   </div>
@@ -30,51 +30,28 @@
   <!-- Modificar reseñas (idea) -->
 
   <div class="parte_inf">
-    <strong>AAAAAAAA</strong>
-    <p>Hola</p>
+    <strong>MI NOMBRE</strong>
+    <p>DESCRIPCION</p>
   </div>
 
-  <ion-fab slot="fixed" vertical="bottom" horizontal="center" [edge]="false">
-    <ion-fab-button>
-      <ion-icon name="chevron-up-circle"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="document"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="color-palette"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="globe"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
 
 </ion-content>
 
-<!-- Parte de abajo de la pagina, barra -->
-
 <ion-tab-bar slot="bottom">
-  <ion-tab-button tab="schedule" (click)="gotoHome()">
+  <ion-tab-button tab="schedule" [routerLink]="['/home']">
     <ion-icon name="home"></ion-icon>
     <ion-label>Main Page</ion-label>
   </ion-tab-button>
 
-  <ion-tab-button tab="speakers" (click)="gotoSaved()">
+  <ion-tab-button tab="speakers" [routerLink]="['/catalog']">
     <ion-icon name="folder"></ion-icon>
-    <ion-label>My Stories</ion-label>
+    <ion-label>Catalog</ion-label>
   </ion-tab-button>
 
-  <ion-tab-button tab="map">
-    <ion-icon name="pencil"></ion-icon>
-    <ion-label>Drafts</ion-label>
-  </ion-tab-button>
-
-  <ion-tab-button tab="about">
+  <ion-tab-button tab="about" [routerLink]="['/account']">
     <ion-icon name="person"></ion-icon>
     <ion-label>Account</ion-label>
+
   </ion-tab-button>
 </ion-tab-bar>
-
 <!-- Logo idea: Bisonte con una camara de pelicula -->

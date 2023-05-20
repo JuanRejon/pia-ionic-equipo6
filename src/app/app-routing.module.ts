@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AutGuardGuard } from './services/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -22,6 +23,24 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'home-logged',
+    loadChildren: () => import('./home-logged/home-logged.module').then( m => m.HomeLoggedPageModule)
+    //canActivate:[AutGuardGuard]
+  },
+  {
+    path: 'acc-logged',
+    loadChildren: () => import('./acc-logged/acc-logged.module').then( m => m.AccLoggedPageModule),
+    canActivate:[AutGuardGuard]
+  },
+  {
+    path: 'catalog',
+    loadChildren: () => import('./catalog/catalog.module').then( m => m.CatalogPageModule)
+  },
+  {
+    path: 'catalog-logged',
+    loadChildren: () => import('./catalog-logged/catalog-logged.module').then( m => m.CatalogLoggedPageModule)
   },
 ];
 

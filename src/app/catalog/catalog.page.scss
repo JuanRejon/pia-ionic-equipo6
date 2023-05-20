@@ -1,0 +1,46 @@
+// Vista principal de la pagina
+
+ion-content{
+    --background: #E6EFE9;
+  }
+
+//boton
+
+.centrar{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//Copiar aqui
+
+ion-button{
+  --background:#1e2749;
+}
+
+// Barra de links de abajo
+
+ion-tab-bar{
+    --background: #64b6ac;
+  }
+  
+  ion-tab-bar ion-label{
+    color: #FFFFFF;
+  }
+  
+  // Iconos
+  
+  ion-icon{
+    color: #FFFFFF;
+  }
+  
+  .CentrarT{
+    text-align: center;
+    left: 0;
+    right: 0; 
+    color: #64b6ac;
+  }
+ 
