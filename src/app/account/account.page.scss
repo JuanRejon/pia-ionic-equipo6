@@ -1,0 +1,102 @@
+// Contenedores por defecto (no borrar por si las dudas)
+
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+
+// Header
+
+.titulo{
+  background: #64b6ac;
+}
+
+// Parte superior de la pagina
+
+.parte_sup{
+  height: 40%;
+  width: 100%;
+  background: #E6EFE9;
+  text-align: center;
+}
+
+.parte_sup strong{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.parte_sup ion-button{
+  --background:#64b6ac;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position:relative;
+}
+
+// Parte de la imagen lol 
+
+.imagen{
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  margin-top: 40px;
+  position:relative;
+  background-image:('\CinemaVerseLogo.jpeg');
+  box-shadow: 2px 2px 2px 2px rgba(0.6, 0.6, 0.6, 0.6);;
+}
+
+// Parte inferior de la pagina
+
+.parte_inf{
+  height: 60%;
+  width: 100%;
+  background: #fcfffd;
+  text-align: center;
+}
+
+.parte_inf p{
+  color: black;
+}
+
+// Barra de links de abajo
+
+
+
+ion-tab-bar{
+  --background: #64b6ac;
+}
+
+ion-tab-bar ion-label{
+  color: #FFFFFF;
+}
+
+// Iconos
+
+ion-icon{
+  color: #FFFFFF;
+}
+
+.CentrarT{
+  text-align: center;
+  left: 0;
+  right: 0; 
+  color: #64b6ac;
+}

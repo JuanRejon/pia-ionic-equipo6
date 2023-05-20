@@ -1,0 +1,67 @@
+// Vista principal de la pagina
+
+ion-content{
+    --background: #E6EFE9;
+  }
+  
+  // Barra de links de abajo
+  
+  ion-tab-bar{
+    --background: #64b6ac;
+  }
+  
+  ion-tab-bar ion-label{
+    color: #FFFFFF;
+  }
+  
+  // Iconos
+  
+  ion-icon{
+    color: #FFFFFF;
+  }
+
+// Parte superior de la pagina
+
+.parte_sup{
+  height: 40%;
+  width: 100%;
+  background: #E6EFE9;
+  text-align: center;
+}
+
+.parte_sup strong{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.parte_sup ion-button{
+  --background:#64b6ac;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position:relative;
+}
+
+// Parte de la imagen lol 
+
+.imagen{
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  margin-top: 100px;
+  position:relative;
+  box-shadow: 2px 2px 2px 2px rgba(0.6, 0.6, 0.6, 0.6);;
+}
+
+// Parte inferior de la pagina
+
+.parte_inf{
+  height: 60%;
+  width: 100%;
+  background: #fcfffd;
+  text-align: center;
+}
+
+.parte_inf p{
+  color: black;
+}
