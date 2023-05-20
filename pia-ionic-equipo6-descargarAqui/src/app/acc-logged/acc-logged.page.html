@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="parte_sup">
+
+    <div>
+      <img class="imagen" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    </div>
+
+  </div>
+
+  <div class="parte_inf">
+    <strong>AAAAAAAA</strong>
+    <p>Hola</p>
+  </div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="schedule" [routerLink]="['/home-logged']">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Main Page</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="speakers" [routerLink]="['/catalog-logged']">
+    <ion-icon name="folder"></ion-icon>
+    <ion-label>Catalog</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="about" [routerLink]="['/acc-logged']">
+    <ion-icon name="person"></ion-icon>
+    <ion-label>Account</ion-label>
+
+  </ion-tab-button>
+</ion-tab-bar>
